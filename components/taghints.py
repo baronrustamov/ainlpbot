@@ -9,7 +9,7 @@ import util
 
 HINTS = {
     '#inline': {
-        'message': "Consider using me in inline-mode 😎\n<code>@ainlpbot {query}</code>",
+        'message': "Consider using me in inline-mode 😎\n<code>@AI_NLP_BOT {query}</code>",
         'default': "Your search terms",
         'buttons': [{
             'text': '🔎 Try it out',

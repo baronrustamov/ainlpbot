@@ -24,7 +24,8 @@ from const import (ENCLOSING_REPLACEMENT_CHARACTER, GITHUB_PATTERN, OFFTOPIC_CHA
                    OFFTOPIC_RULES_MESSAGE_ID)
 from util import get_reply_id, reply_or_edit, get_text_not_in_entities, github_issues, rate_limit, rate_limit_tracker
 
-if os.environ.get('AINLP_DEBUG'):
+'''
+if os.environ.get('AI_NLP_BOT_DEBUG'):
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.DEBUG)
 else:
@@ -33,9 +34,15 @@ else:
     aps_logger = logging.getLogger('apscheduler')
     aps_logger.setLevel(logging.WARNING)
 
+'''
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    level=logging.DEBUG)
+
 logger = logging.getLogger(__name__)
+
 #временно
-logger.setLevel(logging.DEBUG)
+#aps_logger = logging.getLogger('apscheduler')
+#aps_logger.setLevel(logging.DEBUG)
 
 self_chat_id = '@'  # Updated in main()
 

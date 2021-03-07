@@ -11,7 +11,7 @@ def textMessage(s):
     request.query = s
     responseJson = json.loads(request.getresponse().read().decode('utf-8'))
     # Разбираем JSON и вытаскиваем ответ
-    #response=''
+    response=''
     response = responseJson['result']['fulfillment']['speech']
     # Если есть ответ от бота - выдаём его,
     # если нет - бот его не понял

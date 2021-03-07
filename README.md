@@ -1,16 +1,16 @@
 # rules-bot
 
-The Telegram bot @ainlpbot serves the python-telegram-bot [group](https://telegram.me/pythontelegrambotgroup) [chats](https://t.me/pythontelegrambottalk) by announcing the rules and searching the [docs](https://python-telegram-bot.readthedocs.io/) & [wiki](https://github.com/python-telegram-bot/python-telegram-bot/wiki) of [python-telegram-bot](https://python-telegram-bot.org)
+The Telegram bot @AI_NLP_BOT serves the python-telegram-bot [group](https://telegram.me/pythontelegrambotgroup) [chats](https://t.me/pythontelegrambottalk) by announcing the rules and searching the [docs](https://python-telegram-bot.readthedocs.io/) & [wiki](https://github.com/python-telegram-bot/python-telegram-bot/wiki) of [python-telegram-bot](https://python-telegram-bot.org)
 
 So what exactly can this bot do?
 
 ## Search docs & wiki
 
-You can use the inline mode to search for entries in the documentation or the wiki. Simply type `@ainlpbot <your search keywords>` and select one of the results. To search exclusively within the [code snippets](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Code-snippets) or [FAQ](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions), type `@ainlpbot snippets/faq <your search keywords>`.
+You can use the inline mode to search for entries in the documentation or the wiki. Simply type `@AI_NLP_BOT <your search keywords>` and select one of the results. To search exclusively within the [code snippets](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Code-snippets) or [FAQ](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions), type `@AI_NLP_BOT snippets/faq <your search keywords>`.
 
 To nicely insert those links directly into your message, you can enclose the search keywords by `+`, e.g.
 ```
-@ainlpbot I 💙 +InlineQueries+, but you need an +InlineQueryHandler+ for it.
+@AI_NLP_BOT I 💙 +InlineQueries+, but you need an +InlineQueryHandler+ for it.
 ```
 becomes
 
@@ -22,25 +22,25 @@ All search is fuzzy, i.e. a few typos won't matter.
 
 ## Search GitHub
 
-The inline mode can also be used to search for threads and commits in the [GitHub repository](https://github.com/python-telegram-bot/python-telegram-bot) of python-telegram-bot. Simply type `@ainlpbot #<your search keyword>` and select the result. The search keyword may be either
+The inline mode can also be used to search for threads and commits in the [GitHub repository](https://github.com/python-telegram-bot/python-telegram-bot) of python-telegram-bot. Simply type `@AI_NLP_BOT #<your search keyword>` and select the result. The search keyword may be either
 
 * the number of an issue/pull request
 * a phrase to search for in issue/pull request titles
 * a commit SHA
 
-Optionally you may prepend the name of a repository within the [python-telegram-bot GitHub organization](https://github.com/python-telegram-bot) (`@ainlpbot repo#<your search keyword>`) to search in that repo instead of the default repository.
+Optionally you may prepend the name of a repository within the [python-telegram-bot GitHub organization](https://github.com/python-telegram-bot) (`@AI_NLP_BOT repo#<your search keyword>`) to search in that repo instead of the default repository.
 
 Of course, you can also insert those links directly into your message, e.g.
 
 ```
-@ainlpbot Pull Request #1920 is about #TypeHinting.
+@AI_NLP_BOT Pull Request #1920 is about #TypeHinting.
 ```
 
 ## Short-Replies
 
 rules-bot provides a number of predefined messages that are frequently needed. A list of available tag hints is available via the `/hints` command. Simply send `#<taghint>` and rules-bot will delete your message and send the corresponding text instead. Reply to a message with `#<taghint>` to make rules-bot send the message as reply to that message.
 
-Tag hints are also available via the inline mode. Typing `@ainlpbot #taghint` allows you to send the message yourself instead of having rules-bot send it. You can even type `@ainlpbot #taghint <a personal message>`, to insert the personal message at a meaningful spot within the message. For most tag hints this will just prepend the personal message.
+Tag hints are also available via the inline mode. Typing `@AI_NLP_BOT #taghint` allows you to send the message yourself instead of having rules-bot send it. You can even type `@AI_NLP_BOT #taghint <a personal message>`, to insert the personal message at a meaningful spot within the message. For most tag hints this will just prepend the personal message.
 
 ## Things it does automatically
 
@@ -56,7 +56,7 @@ When mentioning issues, pull requests or commit SHAs in the same manner as descr
 
 ### Welcome members
 
-ainlpbott will automatically delete the service messages announcing new members. Instead, it will welcome new members by mentioning them in a short message that links to a message stating the rules of the group. New members are welcomed in batches. Currently, there will be at most one welcoming message per hour. The linked rules messages are updated with the current rules on start-up.
+AI_NLP_BOTt will automatically delete the service messages announcing new members. Instead, it will welcome new members by mentioning them in a short message that links to a message stating the rules of the group. New members are welcomed in batches. Currently, there will be at most one welcoming message per hour. The linked rules messages are updated with the current rules on start-up.
 
 ## Fixed commands
 
@@ -67,4 +67,4 @@ ainlpbott will automatically delete the service messages announcing new members.
 
 ## Other
 
-ainlpbot can make sandwiches. You can ask it to do so by typing `make me a sandwich`. We'll see, if it actually does 😉
+AI_NLP_BOT can make sandwiches. You can ask it to do so by typing `make me a sandwich`. We'll see, if it actually does 😉
