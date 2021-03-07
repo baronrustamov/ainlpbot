@@ -34,6 +34,8 @@ else:
     aps_logger.setLevel(logging.WARNING)
 
 logger = logging.getLogger(__name__)
+#временно
+logger.setLevel(logging.DEBUG)
 
 self_chat_id = '@'  # Updated in main()
 

@@ -1,14 +1,14 @@
 import re
 
-USER_AGENT = 'Github: python-telegram-bot/rules-bot'
+USER_AGENT = 'Github: baronrustamov/ainlpbot'
 ENCLOSING_REPLACEMENT_CHARACTER = '+'
 ENCLOSED_REGEX = rf'\{ENCLOSING_REPLACEMENT_CHARACTER}([a-zA-Z_.0-9]*)\{ENCLOSING_REPLACEMENT_CHARACTER}'
-OFFTOPIC_USERNAME = 'pythontelegrambottalk'
-ONTOPIC_USERNAME = 'pythontelegrambotgroup'
+OFFTOPIC_USERNAME = 'ainlpbot'
+ONTOPIC_USERNAME = 'ainlpbot'
 OFFTOPIC_CHAT_ID = '@' + OFFTOPIC_USERNAME
 TELEGRAM_SUPERSCRIPT = 'ᵀᴱᴸᴱᴳᴿᴬᴹ'
-FAQ_CHANNEL_ID = '@ptbfaq'
-SELF_BOT_NAME = 'ainlpbot'
+FAQ_CHANNEL_ID = 'ptbfaq'
+SELF_BOT_NAME = '@ainlpbot'
 ONTOPIC_RULES_MESSAGE_ID = 419903
 ONTOPIC_RULES_MESSAGE_LINK = 'https://t.me/pythontelegrambotgroup/419903'
 OFFTOPIC_RULES_MESSAGE_ID = 161133

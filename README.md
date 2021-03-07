@@ -56,7 +56,7 @@ When mentioning issues, pull requests or commit SHAs in the same manner as descr
 
 ### Welcome members
 
-rules-bot will automatically delete the service messages announcing new members. Instead, it will welcome new members by mentioning them in a short message that links to a message stating the rules of the group. New members are welcomed in batches. Currently, there will be at most one welcoming message per hour. The linked rules messages are updated with the current rules on start-up.
+ainlpbott will automatically delete the service messages announcing new members. Instead, it will welcome new members by mentioning them in a short message that links to a message stating the rules of the group. New members are welcomed in batches. Currently, there will be at most one welcoming message per hour. The linked rules messages are updated with the current rules on start-up.
 
 ## Fixed commands
 
@@ -67,4 +67,4 @@ rules-bot will automatically delete the service messages announcing new members.
 
 ## Other
 
-rules-bot can make sandwiches. You can ask it to do so by typing `make me a sandwich`. We'll see, if it actually does 😉
+ainlpbot can make sandwiches. You can ask it to do so by typing `make me a sandwich`. We'll see, if it actually does 😉
