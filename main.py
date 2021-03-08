@@ -76,6 +76,13 @@ def start(update: Update, context: CallbackContext):
         update.message.reply_text("Hi. I'm a bot that will announce the rules of the "
                                   "python-telegram-bot groups when you type /rules.")
 
+
+def hbday(update, context):
+    context.bot.send_message(chat_id=update.message.chat_id, text='C Днем Рождения, любимая мама!')
+    context.bot.send_message(chat_id=update.message.chat_id, text='C Праздником весны!!')
+    context.bot.send_sticker(chat_id=update.message.chat_id, text='CAADAgADZgkAAnlc4gmfCor5YbYYRAI')
+
+
 def inlinequery_help(update: Update, context: CallbackContext):
     chat_id = update.message.chat_id
     char = ENCLOSING_REPLACEMENT_CHARACTER
@@ -401,6 +408,7 @@ def main():
 
     rate_limit_tracker_handler = MessageHandler(~Filters.command, rate_limit_tracker)
     start_handler = CommandHandler('start', start)
+    hbday_handler = CommandHandler('hbday', hbday)
     rules_handler = CommandHandler('rules', rules)
     rules_handler_hashtag = MessageHandler(Filters.regex(r'.*#rules.*'), rules)
     docs_handler = CommandHandler('docs', docs)
@@ -426,6 +434,7 @@ def main():
     # on different commands - answer in Telegram
     taghints.register(dp)
     dp.add_handler(start_handler)
+    dp.add_handler(hbday_handler)
     dp.add_handler(rules_handler)
     dp.add_handler(rules_handler_hashtag)
     dp.add_handler(docs_handler)
