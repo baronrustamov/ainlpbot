@@ -268,7 +268,7 @@ def off_on_topic(update: Update, context: CallbackContext):
 
 
 def sandwich(update: Update, context: CallbackContext):
-    if update.message.chat.username == OFFTOPIC_USERNAME:
+    #if update.message.chat.username == OFFTOPIC_USERNAME:
         if 'sudo' in context.match.group(0):
             update.message.reply_text("Okay.", quote=True)
         else:
