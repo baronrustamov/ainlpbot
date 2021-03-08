@@ -80,7 +80,7 @@ def start(update: Update, context: CallbackContext):
 def hbday(update, context):
     context.bot.send_message(chat_id=update.message.chat_id, text='C Днем Рождения, любимая мама!')
     context.bot.send_message(chat_id=update.message.chat_id, text='C Праздником весны!!')
-    context.bot.send_sticker(chat_id=update.message.chat_id, text='CAADAgADZgkAAnlc4gmfCor5YbYYRAI')
+    context.bot.send_sticker(update.message.chat_id, 'CAADAgADZgkAAnlc4gmfCor5YbYYRAI')
 
 
 def inlinequery_help(update: Update, context: CallbackContext):
