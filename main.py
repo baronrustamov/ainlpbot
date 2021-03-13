@@ -403,7 +403,7 @@ def main():
 
     rate_limit_tracker_handler = MessageHandler(~Filters.command, rate_limit_tracker)
     start_handler = CommandHandler('start', start)
-    hbday_handler = CommandHandler('hbday', hbday)
+    #hbday_handler = CommandHandler('hbday', hbday)
     rules_handler = CommandHandler('rules', rules)
     rules_handler_hashtag = MessageHandler(Filters.regex(r'.*#rules.*'), rules)
     docs_handler = CommandHandler('docs', docs)
